@@ -19,7 +19,7 @@
 2. `tmux new -s myname` - start new session with name myname
 3. `tmux a`  #  (or at, or attach) - attach to a detached session
 4.  `tmux a -t myname` - attach to a session with a particular name
-5. `tmux ls` - list all sessions
+5. `tmux ls` - list all
 
 ## Inside a session
 Prefix is Ctrl+B
@@ -42,6 +42,13 @@ Prefix is Ctrl+B
 6. `docker exec -it <container_name_or_id> bash` - connect to the container
 7. `docker commit <container_name> new_image_name:new_image_tag` - commit container 
 
+# Git
+1. `export GIT_SSL_NO_VERIFY=1` -- no check certificate
+2. `git config --global http.sslverify false` -- same
+3. `git config --global url."https://".insteadOf git://`-- if proxy blocks git protocol
+
+# Jupyter
+1. `jupyter lab --no-browser --ip=0.0.0.0 --port=7777` - launch jupyter lab
  
 
 

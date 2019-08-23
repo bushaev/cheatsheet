@@ -1,0 +1,1 @@
+1. `lspci | grep VGA` - find all video cards
