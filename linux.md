@@ -13,10 +13,14 @@
     * -l (lower-case L) can be added to just give the file name of matching files.
     * Along with these, --exclude, --include, --exclude-dir {dir1, dir2} flags could be used for efficient searching
 
+# Bash
+## Replace in place recursively
+* find . -type f -print0 | xargs -0 sed -i 's/foo/bar/g'
+
 # Tmux
 ## Working with sessions
 1. `tmux` - start new session
-2. `tmux new -s myname` - start new session with name myname
+2. `tmux new -s myname` - start new session with name `myname`
 3. `tmux a`  #  (or at, or attach) - attach to a detached session
 4.  `tmux a -t myname` - attach to a session with a particular name
 5. `tmux ls` - list all
